@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 520px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 2px solid #d6b199; 
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #4e4b32;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.3em;
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.question {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #4e4b32;
+  margin-bottom: 30px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.option {
+  padding: 18px;
+  background-color: #f3f1e1;
+  border: 2px solid #d6b199;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  font-size: 1.1em;
+  color: #4e4b32;
+}
+
+.option:hover {
+  background-color: #d6b199;
+  color: white;
+  transform: scale(1.05);
+}
+
+.option:active {
+  transform: scale(0.98);
+}
+
+.button {
+  padding: 15px 35px;
+  background-color: #8d6e63;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 10px 0;
+}
+
+.button:hover {
+  background-color: #6d4c41;
+  transform: translateY(-4px);
+}
+
+.button:active {
+  background-color: #4e3629;
+  transform: translateY(2px);
+}
+
+.result {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #4e4b32;
+  margin-top: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h4 {
+    font-size: 1.1em;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+}
